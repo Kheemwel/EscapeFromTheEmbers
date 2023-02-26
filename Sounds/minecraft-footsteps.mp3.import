@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/minecraft-footsteps.mp3-292cc8144ee60f3a3bb8e8059814e34a.mp3str"
+
+[deps]
+
+source_file="res://Sounds/minecraft-footsteps.mp3"
+dest_files=[ "res://.import/minecraft-footsteps.mp3-292cc8144ee60f3a3bb8e8059814e34a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,79 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Scene/ScriptScene/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Graphics/StartButton.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Background.png" type="Texture" id=3]
+[ext_resource path="res://Graphics/QuitButton.png" type="Texture" id=4]
+[ext_resource path="res://Graphics/Title.png" type="Texture" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[node name="Menu" type="Control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 160, -88 )
+scale = Vector2( 0.106667, 0.0818505 )
+texture = ExtResource( 3 )
+
+[node name="Title" type="Sprite" parent="."]
+position = Vector2( 160, -124 )
+scale = Vector2( 0.4, 0.3 )
+texture = ExtResource( 5 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -152.0
+margin_top = -84.0
+margin_right = 169.0
+margin_bottom = 312.0
+rect_scale = Vector2( 0.2, 0.2 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Start" type="Button" parent="VBoxContainer"]
+margin_right = 321.0
+margin_bottom = 196.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+icon = ExtResource( 2 )
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+margin_top = 200.0
+margin_right = 321.0
+margin_bottom = 396.0
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+icon = ExtResource( 4 )
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

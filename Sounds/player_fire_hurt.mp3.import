@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/player_fire_hurt.mp3-0a75ba637a71b5e039a8ddecfa97f69e.mp3str"
+
+[deps]
+
+source_file="res://Sounds/player_fire_hurt.mp3"
+dest_files=[ "res://.import/player_fire_hurt.mp3-0a75ba637a71b5e039a8ddecfa97f69e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
