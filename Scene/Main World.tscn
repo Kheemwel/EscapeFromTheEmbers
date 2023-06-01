@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://Graphics/Character/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Graphics/Tileset/TilesetRes/Floors.tres" type="TileSet" id=2]
-[ext_resource path="res://Scene/Transition Gate Small.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scene/ScriptScene/Player Position.gd" type="Script" id=4]
-[ext_resource path="res://Scene/Transition Gate Big.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Graphics/Tileset/TilesetRes/Foreground Items.tres" type="TileSet" id=6]
-[ext_resource path="res://Graphics/Tileset/TilesetRes/Walls.tres" type="TileSet" id=7]
-[ext_resource path="res://Sprites/light.png" type="Texture" id=8]
-[ext_resource path="res://Graphics/Tileset/TilesetRes/Damaging Object.tres" type="TileSet" id=9]
+[ext_resource path="res://Sprites/Character/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/Tileset/Floors.tres" type="TileSet" id=2]
+[ext_resource path="res://Scene/ObjectScenes/Transition Gate Small.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Player Position.gd" type="Script" id=4]
+[ext_resource path="res://Scene/ObjectScenes/Transition Gate Big.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sprites/Tileset/Foreground Items.tres" type="TileSet" id=6]
+[ext_resource path="res://Sprites/Tileset/Walls.tres" type="TileSet" id=7]
+[ext_resource path="res://Sprites/Light/light.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Tileset/Damaging Object.tres" type="TileSet" id=9]
 
 [node name="Main World" type="YSort"]
 script = ExtResource( 4 )
